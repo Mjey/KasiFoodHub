@@ -1,0 +1,39 @@
+<!-- <ion-header >
+  <ion-toolbar color="secondary">
+    <ion-title text-center>SignIn</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content  padding class="body">
+<ion-grid>
+  <ion-row>
+    <ion-col >
+      <div class="logo">
+        <img src="../../assets/Kasi_Logo.png" alt="Image not found" width="130" height="130">
+        <h5 class="WelcomText">Welcome To Kasi Food Hub</h5>
+      </div>
+      <br><br>
+      <div class="SignInUI">
+        <form class="form">
+          <ion-item>
+            <ion-label color="light">E-mail :</ion-label>
+            <ion-input [(ngModel)]="email" placeholder="Email"></ion-input>
+
+          </ion-item> 
+          <ion-item>
+            <ion-label color="light">Password :</ion-label>
+            <ion-input [(ngModel)]="password" type="password" placeholder="Password"></ion-input>
+
+          </ion-item> 
+          <br>
+          <ion-button expand="block" color="secondary" fill="outline" (click)="SignIn()">Sign-In</ion-button>
+          <br><br>
+          <a  class="ForgotPassword" (click)="ForgotPassword()">Forgot Password ?</a>
+          <br>
+          <a   class="Sign-Up" (click)="SignUp()">Sign Up</a>
+        </form>
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>

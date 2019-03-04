@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Nunito:700');
+
+img{
+    border: 1px solid black;
+    border-radius: 80px 80px 80px 80px;
+    opacity: 0.8;
+}
+.logo{
+    margin: 20% 0 0 0;
+    text-align: center;
+    animation: bounce 4s ease-in-out;
+    animation-duration: 4s;
+}
+@keyframes bounce {
+    50%{
+        transform: translateY(80px);
+        opacity: 0;
+    }  
+}
+ion-content{
+    --background: #fff url('../../assets//background.jpeg') no-repeat center center / cover;
+    background-image: url('../../assets/background.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 100%;
+    }
+.WelcomText{
+    font-family: 'Lobster', cursive;
+    font-size: 18pt;
+    font-weight: bold;
+    color: #0cd1e8;
+    opacity: 0.8;
+}
+form ion-label{
+    font-family: 'Nunito', sans-serif;
+} 
+form ion-item{
+    --ion-background-color: none;
+    border: 1px solid white;
+    border-radius: 5px 5px 5px 5px;
+    margin: 0.5em; 
+ }
+ form ion-input{
+     color: white;
+     font-family: 'Nunito', sans-serif;
+ }
+ form ion-button{
+    font-family: 'Nunito', sans-serif;
+    margin: 0.5em;
+ }
+.SignInUI{
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
